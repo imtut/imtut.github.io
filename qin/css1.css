@@ -94,7 +94,7 @@
     bottom: 0;
 	}
   
-  
+	.error{display:none;}
   
 }
 
@@ -103,5 +103,7 @@
 	.abtu{height:16.8%}
 	
 	.abtu-bottom{display:none;}
+	
+	.iphone1,.iphone2,.iphone3{display:none;}
 
 }
