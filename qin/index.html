@@ -18,7 +18,7 @@
 <script type="text/javascript" src="./js/jquery.jplayer.js"></script>
 <script type="text/javascript" src="./js/lrc.js"></script>
 <style>
-
+ 
 </style>
 
 <script>
@@ -57,6 +57,7 @@ $(document).ready(function(){
 
 </head>
 <body>
+<div class="load"><div class="loading">Loading</div></div>
 <!--第一页-->
 	<div id="jp_container_1" class="iphone1 jp-audio">
 		<div class="music-background"></div>
@@ -150,7 +151,7 @@ $(document).ready(function(){
 	<div class="iphone2">
 		<div class="head" style="color:#777">
 			<i class="headl fa fa-angle-right" aria-hidden="true"></i>
-			<p>Adoi design</p>
+			<p>ADOI DESIGN</p>
 			<i class="headr fa fa-reorder" aria-hidden="true"></i>
 		</div>
 		<div class="photo">
@@ -190,7 +191,7 @@ $(document).ready(function(){
 			<div class="wow flipInX" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.1s; animation-name: flipInX;">
 			<div class="lolid-card wow bounceInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.1s; animation-name: bounceInUp;">
 				<div class="id-title">
-					<span>收藏的ID (11)</span>
+					<span>收藏的ID (5)</span>
 				</div>
 				
 				<div class="user-img"><img src="https://i.loli.net/2021/03/15/QBPN28sfLyOIMeK.jpg" alt=""></div>
@@ -363,6 +364,14 @@ $( document ).ready(function() {
 });
 </script>-->
 <script>
+
+  
+//聊天文字消失
+$(".load").show().delay(2500).fadeOut();
+
+
+
+
 //延迟加载特效
 	new WOW().init();
 </script>
