@@ -414,6 +414,8 @@ h5{
     padding: 25px 30px;
 }
 
+.head p{display:none;}
+
 .head3{
 	background: rgb(255 255 255 / 0.80);
     border-top-left-radius: 29px;
