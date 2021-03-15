@@ -1,0 +1,718 @@
+﻿html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote {padding: 0; margin: 0; box-sizing: border-box} 
+input:focus,select:focus,textarea:focus,button:focus,position:focus,a:focus {outline: none} 
+h1,h2,h3,h4,h5,h6,h7 {font-weight: normal}
+ul,li,i,em {list-style-type: none;font-style: normal;}
+body{
+	/*min-height: 100vh;*/
+    /*font-family: Roboto, Arial;*/
+	font-family: "DM Sans", sans-serif,"微软雅黑";
+    color: #ADAFB6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ecdfff;
+
+}
+
+h2{
+    text-align: center;
+    margin-top: 33px;
+    color: #fff;
+}
+
+h5{
+	text-align: center;
+    color: #fff;
+}
+
+.talk{
+	width: 35%;
+    height: 4px;
+    border-radius: 15px;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    bottom: 8px;
+    left: 52.5%;
+    margin-left: -20%;
+    z-index: 22;
+}
+/*music*/
+.volume{
+	width: 85%;
+	height: 20px;
+	margin: 7% 7%;
+	z-index: 222;
+	position: relative;
+}
+
+.volume a {
+	color:fff
+}
+
+.volume li{
+	float: left;
+	display: block;
+    overflow: hidden;
+}
+
+.jp-volume-bar{
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+    width: 76%;
+    height: 5px;
+    margin: 8px 10px;
+    cursor: pointer;
+    float: left;
+}
+
+.jp-volume-bar-value{
+	background: #555;
+    width: 0px; 
+    height: 5px;
+    border-radius: 5px;
+}
+
+.jp-time-holder{
+	width: 100%;
+    padding: 5 10px;
+    position: absolute;
+    bottom: 200px;
+    color: #fdfdfd;
+    font-size: 15px;
+    text-shadow: 0 0 4px rgb(0 0 0 / 30%);
+}
+	
+.jp-current-time{
+	float: left;
+    transform: rotate(-10deg);
+}
+
+.jp-duration{
+	float: right;
+    transform: rotate(10deg);
+}
+	
+.jp-seek-bar{
+	height: 1px;
+    position: absolute;
+    bottom: 75px;
+}
+
+.jp-play-bar{
+	width: 6.2%;
+    background: #555;
+    height: 1px;
+}
+
+.jp-controls a{
+	color: #555;
+}
+
+.content{
+	position: relative;
+	text-align: center;
+	font-size: 13px;
+	color: #ededed;
+	height: 260px;
+	overflow: hidden;
+	font-family: 微软雅黑;
+	text-shadow: 0 0 4px rgb(0 0 0 / 0.3);
+	line-height: 25px;
+	transition: all .5s ease-in;
+}
+
+#lrc_list li.hover{
+	color: #fff;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/*1*/
+
+.iphone1{
+	background: url(./pic/12.jpg);
+	background-size: 215%;
+	width: 265px;
+	background-position-x: -155px;
+	height: 570px;
+	position: absolute;
+	left: 140px;
+	top: 215px;
+	border-radius: 30px;
+	box-shadow: 2px 14px 40px -20px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	/* z-index: -2; */
+}
+
+.music-background{
+	filter: blur(10px);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/* z-index: -1; */
+	background: url(./pic/bg.jpg);
+	background-size: 145%;
+	background-position-x: 0px;
+	background-position-y: 0px;
+}
+
+.music{
+	position: absolute;
+	width: 100%;
+	height: 75px;
+	overflow: hidden;
+	background: rgb(255 255 255 / 90%);
+	bottom: 0;
+	border-top: 1px solid #d9d9d9;
+}
+
+.music-img{
+	width: 35px;
+    height: 35px;
+    background: url(./pic/lisa.jpg);
+    background-size: 100%;
+    margin: 5px 10px;
+    border-radius: 5px;
+    float: left;
+}
+
+.music-name{
+	float: left;
+    height: 45px;
+    font-size: 13px;
+    line-height: 45px;
+}
+
+.music-name p{
+	margin: 0;
+    color: #555;
+    float: left;
+    padding: 0 5px 0 0;
+}
+
+.music-name span{
+	font-size: 12px;
+}
+
+.music-ico{
+	float: right;
+	padding: 12px;
+	width: 100px;
+}
+
+.musici{
+	color: #222;
+    font-size: 20px;
+}
+
+.pause{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin: -6px 15px 0 0;
+	border: 1px solid #222;
+	color: #222;
+	font-size: 12px;
+	border-radius: 50%;
+}
+
+
+.record{
+	position: absolute;
+	width: 100%;
+	height: 75px;
+	overflow: hidden;
+	background: rgb(255 255 255 / 90%);
+	bottom: 0;
+	border-top: 1px solid #d9d9d9;
+}
+
+.record-card{
+	width: 59px;
+	overflow: hidden;
+	text-align: center;
+	float: left;
+}
+
+.record-card p{
+	font-size: 15px;
+	margin: 0;
+	color: #555;
+}
+
+.record-card span{
+	font-size: 12px;
+	line-height: 25px;
+}
+
+.border {border-right: 1px solid #dedede;}
+
+/*2*/
+
+.iphone2{
+	background-color: rgb(255 255 255 / 0.6);
+	width: 265px;
+	height: 570px;
+	position: absolute;
+	left: 440px;
+	top: 170px;
+	border-radius: 30px;
+	box-shadow: 2px 14px 40px -20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.like-card{
+	width: 100%;
+	height: 70px;
+	background: rgb(255 255 255 / 75%);
+	border-radius: 12px;
+	padding: 0 5px;
+	box-shadow: 2px 20px 40px -20px rgb(0 0 0 / 20%);
+}
+
+.photo{
+    padding: 15px 20px;
+    height: auto;
+}
+
+.photo p{
+	color: #555569;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 25px;
+}
+
+.photo-s{
+	position: relative;
+	background-image: url(./pic/15.png);
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	box-shadow: 2px 20px 40px -20px rgb(0 0 0 / 20%);
+	cursor: pointer;
+	margin: 10px 5px;
+	float:left;
+}
+
+.photo-s2{
+	position: absolute;
+    background-image: url(./pic/17.JPG);
+    width: 130px;
+    height: 155px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 2px 20px 40px -20px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    margin-left: 150px;
+    margin-top: 10px;
+    float: left;
+}
+
+.Relax{
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	background: rgb(0 0 0 / 0.15);
+	color: rgb(255 255 255 / 80%);
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+.like-font{
+	float: left;
+    font-size: 12px;
+    padding: 9px 0 10px 10px;
+    width: 45%;
+}
+
+.like-font p{
+	font-size: 13px;
+    font-weight: 500;
+}
+
+.like-ico{
+	float: right;
+	width: 35px;
+	height: 35px;
+	background: url(./pic/16.png);
+	background-size: 95%;
+	margin: 18px 10px 0px 0px;
+}
+
+.lolid{
+    padding: 5px 20px;
+    height: auto;
+}
+
+.lolid p{
+	color: #555569;
+	margin: 0;
+	line-height: 25px;
+	font-size: 13px;
+	font-weight: 500;
+	float: left;
+}
+
+.lolid-card{
+	width: 100%;
+	height: 48%;
+	background: rgb(255 255 255 / 75%);
+	border-radius: 12px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	box-shadow: 2px 20px 40px -20px rgb(0 0 0 / 20%);
+	overflow-y: auto;
+}
+
+.id-title{
+    padding: 7px 10px 5px 10px;
+    position: inherit;
+    background: rgb(255 255 255 / 75%);
+}
+
+.id-title span{
+	font-size: 13px;
+    color: #444;
+}
+
+
+.user-img {float: left;width: 50px;height: 50px;border-radius: 12px;overflow: hidden;margin: 5px 10px 5px 10px;}
+.user-img img {width: 50px;height: 50px;}
+.user-mes {float: left;width: 65%;height: 50px;margin: 5px 0;}
+.user-name {height: 25px;line-height: 20px;font-size: 12px;}
+.user-name span {float: left;    width: 100%;}
+.user-name i {float: left; width: 16px; height: 16px; text-align: center; font-weight: bold; margin: 4.5px; color: #fff; font-size: 12px; border-radius: 15px; display: block}
+.user-name .fa-venus {/*background: #ff4170;*/ line-height: 17px; transform:rotate(30deg);color: #ff4170;}
+.user-name .fa-mars {/*background: #03a9f4;*/ line-height: 18px;color: #03a9f4;}
+.user-txt {height: 20px;line-height: 20px;font-size: 12px;color: #bbb;font-weight: 100;font-family: Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;}
+
+
+/*3*/
+
+.iphone3{
+    background: url(./pic/14.jpg);
+    background-size: 130%;
+    background-position-x: 0px;
+    width: 265px;
+    height: 570px;
+    position: absolute;
+    left: 740px;
+    top: 135px;
+    border-radius: 30px;
+    box-shadow: 2px 14px 40px -20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.head{
+	color: #eee;
+    padding: 25px 30px;
+}
+
+.head3{
+	background: rgb(255 255 255 / 0.80);
+    border-top-left-radius: 29px;
+    border-top-right-radius: 29px;
+    padding-bottom: 40px;
+}
+.headl{
+	font-size: 30px;
+    float: left;
+}
+
+.headr{
+    font-size: 20px;
+    float: right;
+    padding-top: 6px;
+}
+
+.chat-message{
+    width: 100%;
+    height: 265px;
+    overflow: hidden;
+	padding: 10px 0px;
+}
+/*右*/
+.chat-message-right{
+	max-width: 90%;
+	overflow: hidden;
+	height: auto;
+	position: relative;
+	float: right;
+	padding: 0px 6px 0px 0px;
+	margin-bottom: 10px;
+}
+
+.chat-message-right img{
+	width: 40px;
+	border-radius: 50%;
+	float: right;
+	margin-left: 10px;
+}
+
+.chat-emss-right{
+	position: relative;
+	width: auto;
+	height: auto;
+	float:left;
+	padding: 7px 0;
+}
+
+.chat-emss-right p{
+	background: #ecdfff;
+	color: #555;
+	font-size: 13px;
+	border-radius: 5px;
+	padding:5px;
+	margin:0;
+}
+
+/*左*/
+.chat-message-left{
+	width: 90%;
+	overflow: hidden;
+	height: auto;
+	position: relative;
+	padding: 0px 0px 0px 6px;
+}
+
+.chat-message-left img{
+	width: 40px;
+	border-radius: 50%;
+	float: left;
+}
+
+.chat-emss-left{
+	position: relative;
+	width: 77%;
+	height: auto;
+	float:right;
+}
+
+.chat-emss-left p{
+	background: #ecdfff;
+    color: #555;
+    font-size: 13px;
+    border-radius: 5px;
+	padding:5px;
+	margin:0;
+}
+
+
+/*角标*/
+.chat-emss-right:before, .chat-emss-right:after {
+left: 100%;
+}
+
+/* 1. 描绘出位置和形状;*/
+.chat-emss-right:before, .chat-emss-right:after {
+position: absolute;
+top: 14px;
+border: 6px solid transparent;
+content: " ";
+}
+/* 2.border-left:color,width设置; */
+.chat-emss-right:after {
+border-left-color: #ecdfff;
+border-left-width: 4px;
+}
+
+/*角标左*/
+
+.chat-emss-left:before, .chat-emss-left:after {
+left: 100%;
+}
+
+/* 1. 描绘出位置和形状;*/
+.chat-emss-left:before, .chat-emss-left:after {
+position: absolute;
+top: 14px;
+border: 6px solid transparent;
+content: " ";
+}
+/* 2.border-left:color,width设置; */
+.chat-emss-left:after {
+border-left-color: #ecdfff;
+border-left-width: 4px;
+}
+.chat-emss-left:before {
+border-right-color: #ecdfff;
+border-right-width: 4px;
+left: -10px;
+}
+/*角标结束*/
+
+.chat-emoji{
+	width: 60px !important;
+	border-radius: 0 !important;
+	float: none !important;
+	padding: 0px 15px;
+}
+
+.chat-emoji-kj{
+	width: 100%;
+    height: auto;
+    padding: 15px 0;
+}
+
+.chat{
+    position: absolute;
+    left: 42%;
+	padding: 5px 0px;
+}
+
+.chat p{
+	font-size: 13px;
+    float: left;
+    margin: 0;
+}
+
+.chat p{
+	font-size: 15px;
+	
+}
+
+.chat-name{
+	font-size: 17px;
+    float: right;
+    padding: 1px 5px;
+}
+
+.iphone-bottom{
+	position: absolute;
+	width: 100%;
+	height: 210px;
+	bottom: 0;
+	border-radius: 29px;
+	/* background: linear-gradient(180deg, rgb(255 255 255 / 0.80) 0%, hsl(0deg 0% 100% / 90%) 70%); */
+}
+
+.iphone-bottom:after{
+	width: 200%;
+	height: 240px;
+	position: absolute;
+	left: -50%;
+	top: 0;
+	/* z-index: 1; */
+	content: '';
+	border-radius: 0 0 50% 50%;
+	background: linear-gradient(360deg, rgb(255 255 255) 0%, hsl(0 0% 100% / 0.9) 70%);
+	transform: rotateX(180deg);
+}
+
+.iphone-bottom3{
+	position: absolute;
+	width: 100%;
+	height: 240px;
+	border-bottom-right-radius: 29px;
+	border-bottom-left-radius: 29px;
+	bottom: 0;
+	background: linear-gradient(180deg, rgb(255 255 255 / 0.80) 0%, hsl(0deg 0% 100% / 90%) 70%);
+}
+
+.chat-font{
+	width: 95%;
+    height: 30px;
+    background: #f1f2f3;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin: 8px 5px;
+	overflow: hidden;
+}
+
+.chat-font h1{
+	margin: 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 20px;
+}
+
+.chat-ico{
+	color: #7d7d7d;
+    padding: 0px 20px;
+    margin-top: -5px;
+    font-size: 18px;
+}
+
+.chat-ico i{
+	margin: 0 8px;
+}
+
+
+.emoji{
+    width: 70%;
+    height: 40%;
+    position: absolute;
+    left: 15%;
+    top: -20%;
+    z-index: 2;
+}
+
+.emoji img{
+	width: 70px;
+	height: 70px;
+	background: #ffffff;
+	border-radius: 50%;
+	float: left;
+	display: block;
+	margin: 10px 55px;
+	border: 1px solid #ffffff;
+	padding: 1px;
+	box-shadow: 2px 14px 40px -20px rgb(0 0 0 / 0.45);
+}
+
+.name{
+    float: left;
+    width: 100%;
+    /* padding: 30px 0px 0 0; */
+    text-align: center;
+}
+
+.name p{
+	color: #555569;
+    font-size: 15px;
+    font-weight: bold;
+	margin: 0;
+    line-height: 25px;
+}
+
+.name span{
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.botton{
+	position: absolute;
+    width: 185px;
+    height: 35px;
+    bottom: 0;
+    margin: 30px 40px;
+    background: #ff7763;
+    border-radius: 10px;
+	color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#if{
+	width: 100%;
+    height: 150px;
+    border: 0px none;
+    display: inline;
+    overflow: hidden;
+    margin-top: -10px;
+    position: absolute;
+    bottom: 20px;
+	opacity: 0.8;
+}	
+
+
+::-webkit-scrollbar {width : 0px;  height: 1px;}
+::-webkit-scrollbar-thumb {border-radius: 10px;box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);background   : #535353;}
+::-webkit-scrollbar-track {box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);border-radius: 10px;background: #ededed;}

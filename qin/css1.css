@@ -1,0 +1,54 @@
+@media only screen and (max-width:450px) {
+  
+  body{overflow: hidden;}
+
+  .iphone1,.iphone3{display:none;}
+  
+  .iphone2{
+	left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  
+  .like-card{height: 80px;}
+  
+  .Relax{padding: 20px;}
+  
+  .lolid-card{height:auto;}
+  
+  .user-mes{margin: 10px 0;}
+  
+  .lolid{padding: 1% 5%;}
+  
+  .photo{padding: 5% 5% 3.5% 5%;}
+  
+  .like-font p,.lolid p{font-size: 1rem;line-height: 1.5rem;}
+  
+  .like-font {padding: 15px 0 10px 10px;}
+  
+  .user-name,.like-font{font-size: 0.8rem;line-height: 1.9rem;}
+  
+  .id-title span{font-size: 0.8rem;}
+  
+  .photo-s,.user-img,.user-img img{width: 60px;height: 60px;}
+  
+  .jp-audio{
+	width: 100%;
+    left: 0;
+    position: fixed;
+    bottom: 0;
+	}
+  
+  
+  
+}
+
+@media screen and (min-width: 600px) { 
+
+	.abtu{height:16.8%}
+	
+	.abtu-bottom{display:none;}
+
+}
