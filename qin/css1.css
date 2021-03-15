@@ -1,6 +1,6 @@
 @media only screen and (max-width:450px) {
   
-  body{overflow: hidden;}
+  body{}
 
   .iphone1,.iphone3{display:none;}
   
