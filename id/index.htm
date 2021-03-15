@@ -1,0 +1,204 @@
+﻿﻿
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="return" content="true">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">	
+<head>
+<title>id - adoi</title>
+<script src="http://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
+<script src="https://www.jq22.com/jquery/jquery-3.3.1.js"></script>
+<script src="js/wow.min.js"></script>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link href="./css.css" rel="stylesheet">
+<style>
+  .load{
+	position: absolute;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+    z-index: 111;
+    padding: calc(50% - 50px);
+    padding-top: 80%;
+  }
+  
+.loading {
+  --color: #555;
+  --duration: 2000ms;
+  font-family: Roboto, Arial;
+  font-size: 24px;
+  position: relative;
+  white-space: nowrap;
+  user-select: none;
+  color: var(--color);
+}
+.loading span {
+  --x: 0;
+  --y: 0;
+  --move-y: 0;
+  --move-y-s: 0;
+  --delay: 0ms;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  text-indent: calc(var(--x) * -1);
+  overflow: hidden;
+  transform: translate(var(--x), var(--y));
+}
+.loading.start div {
+  opacity: 0;
+}
+.loading.start span {
+  animation: move var(--duration) ease-in-out var(--delay);
+}
+
+@keyframes move {
+  30% {
+    transform: translate(var(--x), var(--move-y));
+  }
+  82% {
+    transform: translate(var(--x), var(--move-y-s));
+  }
+}
+</style>
+
+</head>
+<body>
+<div class="talk"></div>
+  <div class="load"><div class="loading">Loading</div></div>
+	<div class="kj">
+      			<h2>Adoi design</h2>
+		<div class="inside wow bounceInUp" data-wow-delay="2.7s" style="visibility: visible; animation-delay: 0.1s; animation-name: bounceInUp;">
+			<div class="user wow pulse" data-wow-delay="3s" style="visibility: visible; animation-delay: 0.1s; animation-name: pulse;">
+				<img src="./pic/1.jpg">
+				<p>只剩晚安</p>
+				<span>@艾欧尼亚</span>
+			</div>
+			<div class="user wow pulse" data-wow-delay="3.3s" style="visibility: visible; animation-delay: 0.1s; animation-name: pulse;">
+				<img src="./pic/2.jpg">
+				<p>晚霞坠落山野</p>
+				<span>@艾欧尼亚</span>
+			</div>
+			<div class="user wow pulse" data-wow-delay="3.6s" style="visibility: visible; animation-delay: 0.1s; animation-name: pulse;">
+				<img src="./pic/3.jpg">
+				<p>辞暮尔尔</p>
+				<span>@艾欧尼亚</span>
+			</div>
+			<div class="user wow pulse" data-wow-delay="3.9s" style="visibility: visible; animation-delay: 0.1s; animation-name: pulse;">
+				<img src="./pic/4.jpg">
+				<p>烟火年年</p>
+				<span>@艾欧尼亚</span>
+			</div>
+			<div class="user wow pulse" data-wow-delay="4.2s" style="visibility: visible; animation-delay: 0.1s; animation-name: pulse;">
+				<img src="./pic/5.jpg">
+				<p>iceking</p>
+				<span>@艾欧尼亚</span>
+			</div>
+			<div class="user wow pulse" data-wow-delay="4.5s" style="visibility: visible; animation-delay: 0.1s; animation-name: pulse;">
+				<img src="./pic/6.jpg">
+				<p>Adoi</p>
+				<span>@艾欧尼亚</span>
+			</div>   
+			<div class="user wow pulse" data-wow-delay="4.8s" style="visibility: visible; animation-delay: 0.1s; animation-name: pulse;">
+				<img src="./pic/5.jpg">
+				<p>iceking</p>
+				<span>@艾欧尼亚</span>
+			</div>
+			<div class="user wow pulse" data-wow-delay="5.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: pulse;">
+				<img src="./pic/6.jpg">
+				<p>Adoi</p>
+				<span>@艾欧尼亚</span>
+			</div> 
+			<div class="user">
+				<img src="./pic/5.jpg">
+				<p>iceking</p>
+				<span>@艾欧尼亚</span>
+			</div>
+			<div class="user">
+				<img src="./pic/6.jpg">
+				<p>Adoi</p>
+				<span>@艾欧尼亚</span>
+			</div> 
+			<div class="user">
+				<img src="./pic/5.jpg">
+				<p>iceking</p>
+				<span>@艾欧尼亚</span>
+			</div>
+			<div class="user">
+				<img src="./pic/6.jpg">
+				<p>Adoi</p>
+				<span>@艾欧尼亚</span>
+			</div> 
+          
+          
+          
+
+		</div>
+	</div>
+<div class="error">请用手机访问</div>
+
+
+<script>
+//loading  
+$(document).ready(function() {
+
+    let loading = $('.loading').wrapInner('<div></div>'),
+        min = 20,
+        max = 70,
+        minMove = 10,
+        maxMove = 20;
+
+    startAnimation(loading);
+
+    loading.on('animationend webkitAnimationEnd oAnimationEnd', 'span:last-child', e => {
+        startAnimation(loading);
+    });
+
+    //Set CSS vars & generate spans if needed
+    function setCSSVars(elem, min, max, minMove, maxMove) {
+        let width = Math.ceil(elem.width()),
+            text = elem.text();
+        for(let i = 1; i < width; i++) {
+            let num = Math.floor(Math.random() * (max - min + 1)) + min,
+                numMove = Math.floor(Math.random() * (maxMove - minMove + 1)) + minMove,
+                dir = (i % 2 == 0) ? 1 : -1,
+                spanCurrent = elem.find('span:eq(' + i + ')'),
+                span = spanCurrent.length ? spanCurrent : $('<span />');
+            span.css({
+                '--x': i - 1 + 'px',
+                '--move-y': num * dir + 'px',
+                '--move-y-s': ((i % 2 == 0) ? num * dir - numMove : num * dir + numMove) + 'px',
+                '--delay': i * 10 + 'ms'
+            });
+            if(!spanCurrent.length) {
+                elem.append(span.text(text));
+            }
+        }
+    }
+
+    //Start animation
+    function startAnimation(elem) {
+        elem.removeClass('start');
+        setCSSVars(elem, min, max, minMove, maxMove);
+        void elem[0].offsetWidth;
+        elem.addClass('start');
+    }
+    
+});
+  
+//聊天文字消失
+$(".load").show().delay(2500).fadeOut();
+  
+//延迟加载特效
+	new WOW().init();
+</script>
+</body>
+</html>
