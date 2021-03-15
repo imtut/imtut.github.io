@@ -1,6 +1,10 @@
 @media only screen and (max-width:450px) {
   
   body{}
+  
+  .talk{display:none;}
+  
+  .music{height:45px;}
 
   .iphone1,.iphone3{display:none;}
   
